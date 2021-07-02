@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/map-project'),
+      dir: require('path').join(__dirname, './coverage/test-primeNG'),
       subdir: '.',
       reporters: [
         { type: 'html' },

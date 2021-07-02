@@ -1,0 +1,49 @@
+<!-- <p>userlogin works!</p> -->
+
+
+<!-- <div class="form-container">
+    <p class="p-float-label">
+        <input id="float-input" type="text" pInputText> 
+        <label for="float-input">Username</label>
+    </p>
+   
+    
+     <span class="p-float-label" style="margin-top: 2rem;">
+        <input id="float-input" type="text" pInputText> 
+        <label for="float-input">Password</label>
+    </span>
+
+    <br>
+    <button pButton type="button" label="Click"></button>
+</div> -->
+
+  
+    <!-- <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+        <div class="p-float-label" >
+            <input pInputText id="float-input" type="text" name="username" formControlName="username"> 
+            <label for="float-input">Username</label>  
+        </div>
+        <div class="p-float-label" >
+          <input id="float-input" type="text" pInputText name="passwd" formControlName="passwd"> 
+          <label for="float-input">Password</label>
+   
+        </div>
+        <div class="p-float-label">
+            <button pButton [disabled]="!formdata.valid" type="button" label="Click"></button>
+        </div>
+    </form> -->
+<!-- <br> -->
+
+   <div class="container">
+    <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+       <header>Account Login</header>
+       <label>Username</label>
+       <input type="text" name="username" formControlName="username"/>
+        
+       <label>Password</label>
+       <input type="password" class="fortextbox" name="passwd" formControlName="passwd"/>
+        
+       <button [disabled]="!formdata.valid" value="Login">Login</button>
+      
+    </form>
+  </div> 
